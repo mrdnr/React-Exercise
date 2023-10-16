@@ -1,10 +1,12 @@
+import Hello  from "./components/hello";
 import './App.css'
 
 function App() {
   const hello = "Hello World!"
   return (
     <div className='main'>
-      <h2>{hello}</h2>
+      <h1>{hello}</h1>
+      <Hello/>
     </div>
   )
 }
