@@ -9,4 +9,4 @@ function App() {
   )
 }
 
-export default App //this fucntion render main.jx
+export default App 
