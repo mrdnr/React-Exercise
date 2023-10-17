@@ -1,8 +1,10 @@
-function Welcome({ name, age }) {
+import Age from "./Age";
+
+function Welcome({ name }) {
   return (
     <>
-        <p>Welcome {name}!</p>
-        <p>Your age is {age}.</p>
+      <p>Welcome {name}!</p>
+      <Age age="20"/>
     </>
   );
 }
