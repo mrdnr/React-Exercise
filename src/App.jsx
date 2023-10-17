@@ -7,6 +7,7 @@ function App() {
     <div className='main'>
       <h1>{hello}</h1>
       <Hello/>
+      <Hello/>
     </div>
   )
 }
