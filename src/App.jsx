@@ -1,4 +1,5 @@
 import Hello  from "./components/Hello";
+import Message from "./components/Message";
 import './App.css'
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
       <h1>{hello}</h1>
       <Hello/>
       <Hello/>
+      <br/>
+      <Message/>
     </div>
   )
 }
