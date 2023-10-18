@@ -1,12 +1,15 @@
 import Age from "./Age";
+import React from "react";
 
-function Welcome({ name }) {
+function Welcome( {name, age = 17} ) {
   return (
-    <>
+    <div>
       <p>Welcome {name}!</p>
-      <Age age="20"/>
-    </>
+      {age >= 18 && <Age age={age}/>}
+      
+    </div>
   );
+  
 }
 
 export default Welcome;
