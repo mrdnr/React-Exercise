@@ -1,30 +1,27 @@
-import Hello  from "./components/Hello";
-import Message from "./components/Message";
-import Welcome from "./components/Welcome";
-import './App.css'
-import AlertClock from "./components/AlertClock";
-import Counter from "./components/Counter";
+import "./App.css";
+import { useState } from "react";
 
-function App() {
-  const hello = "Hello World!"
+function Counter({ value, amount }) {
+  const [count, setCount] = useState(value);
 
-  const handleClock = () => {
-    const currentTime = new Date();
-    alert("Time : " + currentTime.toLocaleTimeString());
+  const handleIncrement = () => {
+    setCount(count + amount);
   };
+
   return (
-    <div className='main'>
-      <h1>{hello}</h1>
-      <Hello/>
-      <Hello/>
-      <br/>
-      <Message/>
-      <Welcome name={<strong>Mario</strong>}/>
-      <Welcome name='John'/>
-      <AlertClock onClick={handleClock}/>  
-      <Counter/>
+    <div>
+      <h2>Count: {count}</h2>
+      <button onClick={handleIncrement}>Counter</button>
     </div>
-  )
+  );
 }
 
-export default App 
+const App = () => {
+  return (
+    <div>
+      <Counter value={0} amount={5} />
+    </div>
+  );
+};
+
+export default App;
