@@ -1,6 +1,10 @@
 import "./App.css";
 import { useState } from "react";
 
+function Display({count}){
+  return <h2>Counter :{count}</h2>
+}
+
 function Counter({ value, amount }) {
   const [count, setCount] = useState(value);
 
@@ -10,7 +14,7 @@ function Counter({ value, amount }) {
 
   return (
     <div>
-      <h2>Count: {count}</h2>
+      <Display count = {count}/>
       <button onClick={handleIncrement}>Counter</button>
     </div>
   );
@@ -19,7 +23,7 @@ function Counter({ value, amount }) {
 const App = () => {
   return (
     <div>
-      <Counter value={0} amount={5} />
+      <Counter value={0} amount={2} />
     </div>
   );
 };
