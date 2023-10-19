@@ -15,7 +15,8 @@ function App() {
       <Message/>
       <Welcome name={<strong>Mario</strong>}/>
       <Welcome name='John'/>
-      <AlertClock/>
+      {/* render in app */}
+      <AlertClock/>  
     </div>
   )
 }
