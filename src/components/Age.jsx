@@ -6,7 +6,7 @@ function Age(props) {
   
   return (
     <>
-      <p>Your age is {props.age}.</p>
+      {props.age > 18 ? <p>Your age is {props.age}.</p> : <p>You are very young!</p>}
     </>
   );
 }
