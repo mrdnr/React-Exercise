@@ -3,6 +3,7 @@ import Message from "./components/Message";
 import Welcome from "./components/Welcome";
 import './App.css'
 import AlertClock from "./components/AlertClock";
+import Counter from "./components/Counter";
 
 function App() {
   const hello = "Hello World!"
@@ -21,6 +22,7 @@ function App() {
       <Welcome name={<strong>Mario</strong>}/>
       <Welcome name='John'/>
       <AlertClock onClick={handleClock}/>  
+      <Counter/>
     </div>
   )
 }
