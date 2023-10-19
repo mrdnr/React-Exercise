@@ -2,6 +2,7 @@ import Hello  from "./components/Hello";
 import Message from "./components/Message";
 import Welcome from "./components/Welcome";
 import './App.css'
+import AlertClock from "./components/AlertClock";
 
 function App() {
   const hello = "Hello World!"
@@ -14,6 +15,7 @@ function App() {
       <Message/>
       <Welcome name={<strong>Mario</strong>}/>
       <Welcome name='John'/>
+      <AlertClock/>
     </div>
   )
 }
