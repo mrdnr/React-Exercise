@@ -11,18 +11,26 @@ function Counter({ value, amount }) {
   const handleIncrement = () => {
     setCount(count + amount);
   };
+  const handleDecrement = () => {
+    setCount(count - amount);
+  };
+  const handleReset = () => {
+    setCount(value);
+  };
 
   return (
     <div>
       <Display count = {count}/>
-      <button onClick={handleIncrement}>Counter</button>
+      <button onClick={handleIncrement}>Increase</button>
+      <button onClick={handleDecrement}>Decrease</button>
+      <button onClick={handleReset}>Reset</button>
     </div>
   );
 }
 
 const App = () => {
   return (
-    <div>
+    <div className="main">
       <Counter value={0} amount={2} />
     </div>
   );
