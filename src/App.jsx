@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Display({count}){
   return <h2>Counter :{count}</h2>
@@ -17,6 +17,10 @@ function Counter({ value, amount }) {
   const handleReset = () => {
     setCount(value);
   };
+  useEffect(()=>{
+    console.log("Current value :", count)
+  },[count])
+
 
   return (
     <div>
