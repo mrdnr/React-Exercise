@@ -6,6 +6,11 @@ import AlertClock from "./components/AlertClock";
 
 function App() {
   const hello = "Hello World!"
+
+  const handleClock = () => {
+    const currentTime = new Date();
+    alert("Time : " + currentTime.toLocaleTimeString());
+  };
   return (
     <div className='main'>
       <h1>{hello}</h1>
@@ -15,8 +20,7 @@ function App() {
       <Message/>
       <Welcome name={<strong>Mario</strong>}/>
       <Welcome name='John'/>
-      {/* render in app */}
-      <AlertClock/>  
+      <AlertClock onClick={handleClock}/>  
     </div>
   )
 }
