@@ -8,7 +8,9 @@ function MouseClicker() {
 
     return (
 		<>
-			<button name="one" onClick={handleClicker}>Click Me</button>
+			<button name="one" onClick={handleClicker}>Click Me
+                <img width={10} height={10}/>
+            </button>
 		</>
 	);
 }
