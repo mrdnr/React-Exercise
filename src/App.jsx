@@ -13,6 +13,7 @@ function App() {
       <br/>
       <Message/>
       <Welcome name={<strong>Mario</strong>}/>
+      <Welcome name='John'/>
     </div>
   )
 }
