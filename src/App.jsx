@@ -1,12 +1,13 @@
 import './App.css'
+import Hello from './components/Hello'
 
 function App() {
-  const hello = "Hello World!"
+  
   return (
     <>
-      <h2>{hello}</h2>
+      <Hello/>
     </>
   )
 }
 
-export default App //this fucntion render main.jx
+export default App 
