@@ -1,10 +1,10 @@
 import './App.css'
+import Hello from './components/Hello'
 
 function App() {
-  const hello = "Hello World!"
   return (
     <div className='main'>
-      <h2>{hello}</h2>
+      <Hello/>
     </div>
   )
 }
