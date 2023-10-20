@@ -1,11 +1,10 @@
-import { useState } from 'react'
+
 import './App.css'
 
 function App() {
-  const hello = "Helo World!"
   return (
     <>
-      <h1>{hello}</h1>
+      <h1>Helo World!</h1>
     </>
   )
 }
