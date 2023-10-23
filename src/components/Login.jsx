@@ -22,6 +22,12 @@ function Login({ handleLogin }) {
     handleLogin({ username, password, remember });
   };
 
+  const handleReset = () =>{
+    setUsername("");
+    setPassword("");
+    setRemember(false);
+  }
+
   const isForm = username.trim() !== "" && password.trim() !== "";
   return (
     <div>
@@ -57,6 +63,7 @@ function Login({ handleLogin }) {
         <button type="submit" disabled={!isForm}>
           Login
         </button>
+        <button onClick={handleReset}>Reset</button>
       </form>
     </div>
   );
