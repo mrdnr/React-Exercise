@@ -18,7 +18,7 @@ function Login({ handleLogin }) {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Since the form is used, we can prevent page refreshing with each change.
     handleLogin({ username, password, remember });
   };
 
