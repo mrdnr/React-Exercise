@@ -1,18 +1,16 @@
 import React ,{ useState } from "react";
-import InteractiveWelcome  from './components/Welcome'
+
 import "./App.css";
+import Login from "./components/Login";
 
 
 const App = () => {
 
-	const [nameInput, setNameInput] = useState('')
-	function handleChange(e) {
-		setNameInput(e.target.value)
-	}
+	
 
 	return (
 		<div className="app">
-			<InteractiveWelcome  value={nameInput} onChange={handleChange}/>
+			<Login/>
 		</div>
 	);
 };
