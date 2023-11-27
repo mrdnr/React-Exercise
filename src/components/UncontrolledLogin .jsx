@@ -5,7 +5,7 @@ function Login() {
     username: "",
     password: "",
     remember: "",
-  });
+  }); // Assuming you have state variables for username and password
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -34,7 +34,7 @@ function Login() {
       ...formData,
       [name]: type === "checkbox" ? checked : value,
     });
-  }
+  } // With handleChange event we can access username and password using setFormData.
 
   return (
     <form onSubmit={handleSubmit}>
