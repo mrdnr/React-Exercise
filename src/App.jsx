@@ -1,12 +1,12 @@
 import "./App.css";
-import FocusableInput from "./components/FocusableInput";
+import Counter from "./components/Counter";
 
 const App = () => {
 
   return (
     <div>
-      <h2>Component Mount Message Example</h2>
-      <FocusableInput />
+      <h2>Counter  Example</h2>
+      <Counter initialValue={0}/>
     </div>
   );
 };
