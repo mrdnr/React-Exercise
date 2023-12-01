@@ -16,12 +16,21 @@ const TodoList = () => {
     setNewItem('');
   };
 
+  const handleRemoveItem = (index) => {
+    const updatedItems = [...items];
+    updatedItems.splice(index, 1);
+    setItems(updatedItems);
+  };
+
   return (
     <div>
       <h2>Todo List</h2>
       <ul>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index}>
+            {item}
+            <button onClick={() => handleRemoveItem(index)}>Remove</button>
+          </li>
         ))}
       </ul>
       <div>
