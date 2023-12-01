@@ -1,12 +1,14 @@
+import Color from './Color';
 
 const Colors = ({ items }) => {
   return (
     <ul>
       {items.map(({ id, name }) => (
-        <li key={id}>{name}</li>
+        <Color key={id} id={id} name={name} />
       ))}
     </ul>
   );
 };
 
 export default Colors;
+
