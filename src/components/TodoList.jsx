@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const TodoList = () => {
   const [items, setItems] = useState([]);
-  const [newItem, setNewItem] = useState("");
+  const [newItem, setNewItem] = useState('');
 
   const handleAddItem = () => {
-    if (newItem.trim() !== "") {
+    if (newItem.trim() !== '') {
       setItems([...items, newItem.trim()]);
-      setNewItem("");
+      setNewItem('');
     }
   };
 
