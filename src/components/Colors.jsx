@@ -2,8 +2,8 @@
 const Colors = ({ items }) => {
   return (
     <ul>
-      {items.map((color, index) => (
-        <li key={index}>{color}</li>
+      {items.map(({ id, name }) => (
+        <li key={id}>{name}</li>
       ))}
     </ul>
   );
