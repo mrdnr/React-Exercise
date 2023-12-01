@@ -5,7 +5,7 @@ const App = () => {
 
   return (
     <div>
-      <h2>Auto Focused Input</h2>
+      <h2>Component Mount Message Example</h2>
       <FocusableInput />
     </div>
   );

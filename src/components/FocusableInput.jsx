@@ -1,13 +1,20 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
 const FocusableInput = () => {
-  const inputRef = useRef(null);
+  const isMounted = useRef(false);
 
   useEffect(() => {
-    inputRef.current.focus();
+    if (!isMounted.current) {
+      console.log("Component is mounted for the first time!");
+      isMounted.current = true;
+    }
+
+    return () => {
+      console.log("Component will unmount");
+    };
   }, []);
 
-  return <input ref={inputRef} />;
+  return <div>Component with Mount Message</div>;
 };
 
 export default FocusableInput;
