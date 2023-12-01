@@ -1,13 +1,12 @@
 import "./App.css";
-import Colors from "./components/Colors";
+import FocusableInput from "./components/FocusableInput";
 
 const App = () => {
-  const colorList = ["Red", "Green", "Blue", "Yellow"];
 
   return (
     <div>
-      <h2>Color List</h2>
-      <Colors items={colorList} />
+      <h2>Auto Focused Input</h2>
+      <FocusableInput />
     </div>
   );
 };
