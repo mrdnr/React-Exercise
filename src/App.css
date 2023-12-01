@@ -7,3 +7,12 @@
   justify-content: center;
   gap: 5px;
 }
+
+.welcome {
+  background-color: #8da817;
+  border: 2px solid #333;
+  padding: 10px;
+  margin: 10px;
+  color: #333;
+  font-weight: 600;
+}
