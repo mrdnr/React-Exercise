@@ -1,5 +1,5 @@
 import "./App.css";
-import Login from "./components/Login";
+import Clock from "./components/Clock";
 
 
 
@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <div id="app">
-      <Login/>
+      <Clock/>
     </div>
   );
 };
