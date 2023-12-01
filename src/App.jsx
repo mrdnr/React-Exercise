@@ -1,5 +1,5 @@
 import "./App.css";
-import Counter from "./components/Counter";
+import Login from "./components/Login";
 
 
 
@@ -7,8 +7,8 @@ import Counter from "./components/Counter";
 const App = () => {
 
   return (
-    <div>
-      <Counter/>
+    <div id="app">
+      <Login/>
     </div>
   );
 };
