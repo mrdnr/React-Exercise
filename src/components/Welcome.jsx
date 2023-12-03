@@ -1,4 +1,4 @@
-function Welcome() { //delete props
+function Welcome({name = "Emre"}) { //Default props value
     return ( 
         <p>Welcome {name}!</p>
      );
