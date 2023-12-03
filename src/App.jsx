@@ -1,17 +1,6 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import Clock from "./components/Clock";
 
-function Clock() {
-  const [time, setDate] = useState(new Date());
-
-  useEffect(() => {
-    setInterval(() => {
-      setDate(new Date());
-    }, 1000);
-  }, [time]);
-
-  return <h2>{time.toLocaleString()}</h2>;
-}
 
 const App = () => {
   return (
