@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 
 function Login() {
 	const [data, setData] = useState({
@@ -90,12 +89,4 @@ function Login() {
 	);
 }
 
-const App = () => {
-	return (
-		<div id="app">
-			<Login />
-		</div>
-	);
-};
-
-export default App;
+export default Login;
