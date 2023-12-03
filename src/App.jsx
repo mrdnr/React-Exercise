@@ -1,13 +1,12 @@
-import './App.css'
-import FocusableInput from "./components/FocusableInput";
-
-
+import Container from './components/Container';
 
 const App = () => {
-
   return (
     <div>
-      <FocusableInput/>
+      <Container>
+        <p>This content is inside the custom container.</p>
+        {/* Add more child components/content as needed */}
+      </Container>
     </div>
   );
 };
