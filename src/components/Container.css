@@ -7,4 +7,12 @@
 .container-title {
   color: blue;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+.collapsed {
+  max-height: 30px;
+  overflow: hidden;
+}
+.container-content{
+  
 }
