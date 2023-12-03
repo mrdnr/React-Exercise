@@ -1,12 +1,13 @@
+import './App.css'
+import FocusableInput from "./components/FocusableInput";
 
-import Login from "./components/UncontrolledLogin";
 
 
 const App = () => {
 
   return (
     <div>
-      <Login/>
+      <FocusableInput/>
     </div>
   );
 };
