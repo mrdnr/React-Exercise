@@ -1,14 +1,12 @@
 import "./App.css";
-import Clock from "./components/Clock";
-
-
+import TodoList from "./components/TodoList";
 
 
 const App = () => {
 
   return (
     <div id="app">
-      <Clock/>
+      <TodoList/>
     </div>
   );
 };
